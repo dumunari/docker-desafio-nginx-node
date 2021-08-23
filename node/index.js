@@ -8,7 +8,7 @@ app.get('/', async (req,res) => {
     await insertName()
     const names = await retrieveNames()
 
-    let body = '<h1> Full Cycle </h1> <ul> ';
+    let body = '<h1> Full Cycle Rocks!</h1> <ul> ';
     names.forEach(element => {
         body = body + `<li>${element.name}</li>`
     });
